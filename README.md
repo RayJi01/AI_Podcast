@@ -90,15 +90,18 @@ git clone https://github.com/RayJi01/AI_Podcast.git
    ``` 
 7. For AI_Podcast_ZH.py, run the system by:
    * At the supervisor side to see all the model supported, and find Baichuan-chat or any other models you want, type
+     
      ```
      xinference list --all
      ```  
    * At the client side, launch the Baichuan-chat-13B model from `${supervisor_host}` by
+     
      ```
      xinference launch -n Baichuan-chat -q 4_bit -s 13
      ```
      If success, the system will return a `model_uid`. You can launch two different models or launch one model to act on two characters. 
    * Start the system by
+     
      ```
      python Ai_Podcast.py -e ${supervisor_endpoint} -m1 ${model_uid} -m2 ${model_uid}
      ```

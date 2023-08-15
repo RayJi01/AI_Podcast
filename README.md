@@ -40,7 +40,7 @@ The **AI_Podcast_ZH** is built by:
   pip install pyttsx3
   ```
 - For the AI_Podcast version, ensure you have at least 16G memory storage for computing.
-- For the AI_Podcast_ZH version, ensure you have at least 24G memory storage for launching one model. If you want to launch two Baichuan
+- For the AI_Podcast_ZH version, the required memory space is varied depending on the model you want to launch. For 7B models, 16G memory is sufficient. For 13B models, you need to have 24G memory for launching one model. 
 - Make sure you have the latest version of `Xinference` . Install it by
   
   ```

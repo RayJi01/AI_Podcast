@@ -58,11 +58,11 @@ git clone https://github.com/RayJi01/AI_Podcast.git
    ```
    cd AI_Podcast
    ```
-3. Install the required dependencies:
+3. Install the required dependencies(except for Whisper):
    ```
    pip install -r requirements.txt
    ```
-   or follow the step to install required packages when launching.
+   For Openai Whisper, please download this [packages](https://pypi.org/project/openai-whisper/)
 4. To start the Xinference Service：
    * Start an `Instance` locally:
      ```

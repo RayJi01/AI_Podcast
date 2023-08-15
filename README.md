@@ -33,44 +33,73 @@ The AI_Podcast_ZH is built by:
 
 ## Prerequisites
 - A machine with either Windows, Ubuntu, or MacOS system. 
-- Only MacOS can access radio output(by the system provided "say" command in MacOS) with the source code. For Windows or Ubuntu, try ''pyttsx3'' using `pip install pyttsx3`.
+- Only MacOS can access radio output(by the system provided "say" command in MacOS) with the source code. For Windows or Ubuntu, try ''pyttsx3'':
+  ```
+  pip install pyttsx3
+  ```
 - For the AI_Podcast version, ensure you have at least 16G memory storage for computing.
 - For the AI_Podcast_ZH version, ensure you have at least 24G memory storage for launching one model. If you want to launch two Baichuan
-- Make sure you have the latest version of ''Xinference''. Install it by `pip install "xinference[all]"`. For detailed information about this package, [click here to read more](https://github.com/xorbitsai/inference)
+- Make sure you have the latest version of ''Xinference''. Install it by
+  ```
+  pip install "xinference[all]"
+  ```
+  For detailed information about this package, [click here to read more](https://github.com/xorbitsai/inference)
 
 ## Installation
-Clone this repository: `git clone https://github.com/RayJi01/AI_Podcast.git`
+Clone this repository: 
+```
+git clone https://github.com/RayJi01/AI_Podcast.git
+```
 
 ## Usage
 1. Navigate to the project directory:
-   `cd AI_Podcast`
-2. Install the required dependencies:
-   `pip install -r requirements.txt`
+   ```
+   cd AI_Podcast
+   ```
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
    or follow the step to install required packages when launching.
-3. To start the Xinference Service：
-   * Start an <mark>Instance<mark> locally:
-     `xinference`
-     This will start the service at default <mark>http://localhost:9997</mark>.
+4. To start the Xinference Service：
+   * Start an `Instance` locally:
+     ```
+     xinference
+     ```
+     This will start the service at default `http://localhost:9997`.
      
-   * Start a <mark>Cluster<mark> locally, you need to start a Xinference supervisor on one server and Xinference workers on the other servers. Follow the steps below:
+   * Start a `Cluster` locally, you need to start a Xinference supervisor on one server and Xinference workers on the other servers. Follow the steps below:
      **For Supervisor**:
-     `xinference-supervisor -H "${supervisor_host}"`
+     ```
+     xinference-supervisor -H "${supervisor_host}"
+     ```
      Replace ${supervisor_host} with the actual host of your supervisor server.
      
      **For Worker**:
-     `xinference-worker -e "http://${supervisor_host}:9997"`
-     This will start the service at <mark>http://${supervisor_host}:9997<mark>, where <mark>${supervisor_host}<mark> is the hostname or IP address of the server where the supervisor is running.
+     ```
+     xinference-worker -e "http://${supervisor_host}:9997"
+     ```
+     This will start the service at `http://${supervisor_host}:9997`, where `${supervisor_host}` is the hostname or IP address of the server where the supervisor is running.
      
-4. For AI_Podcast.py, run the system by:
-   `python AI_Podcast.py -e ${supervisor_host}` 
-5. For AI_Podcast_ZH.py, run the system by:
-   * At the supervisor side, type `xinference list --all` to see all the model supported, and find Baichuan-chat or any other models you want. 
-   * At the client side, launch the Baichuan-chat-13B model from <mark>${supervisor_host}<mark> by
-     `xinference launch -n Baichuan-chat -q 4_bit -s 13`.
-     If success, the system will return a <mark>model_uid<mark>. You can launch two different models or launch one model to act on two characters. 
+5. For AI_Podcast.py, run the system by:
+   ```
+   python AI_Podcast.py -e ${supervisor_host}
+   ``` 
+7. For AI_Podcast_ZH.py, run the system by:
+   * At the supervisor side to see all the model supported, and find Baichuan-chat or any other models you want, type
+     ```
+     xinference list --all
+     ```  
+   * At the client side, launch the Baichuan-chat-13B model from `${supervisor_host}` by
+     ```
+     xinference launch -n Baichuan-chat -q 4_bit -s 13
+     ```
+     If success, the system will return a `model_uid`. You can launch two different models or launch one model to act on two characters. 
    * Start the system by
-     `python Ai_Podcast.py -e ${supervisor_endpoint} -m1 ${model_uid} -m2 ${model_uid}`
-     <mark>${supervisor_endpoint}<mark> is where your supervisor is launched and running. <mark>${model_uid}<mark> is the id returned from successful launching. 
+     ```
+     python Ai_Podcast.py -e ${supervisor_endpoint} -m1 ${model_uid} -m2 ${model_uid}
+     ```
+     `${supervisor_endpoint}` is where your supervisor is launched and running. `${model_uid}` is the id returned from successful launching. 
 
 ## Features
 - ⚡️ State-of-the-Art Models: Experiment with cutting-edge built-in models using Xinference to receive good performances. 

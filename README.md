@@ -89,7 +89,7 @@ git clone https://github.com/RayJi01/AI_Podcast.git
    python AI_Podcast.py -e ${supervisor_host}
    ``` 
 7. For AI_Podcast_ZH.py, run the system by:
-   * At the supervisor side to see all the model supported, and find Baichuan-chat or any other models you want, type:
+   * At the supervisor side to see all the model supported, and find Baichuan-chat or any other models you want:
      
      ```
      xinference list --all

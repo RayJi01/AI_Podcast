@@ -34,12 +34,14 @@ The AI_Podcast_ZH is built by:
 ## Prerequisites
 - A machine with either Windows, Ubuntu, or MacOS system. 
 - Only MacOS can access radio output(by the system provided "say" command in MacOS) with the source code. For Windows or Ubuntu, try ''pyttsx3'':
+  
   ```
   pip install pyttsx3
   ```
 - For the AI_Podcast version, ensure you have at least 16G memory storage for computing.
 - For the AI_Podcast_ZH version, ensure you have at least 24G memory storage for launching one model. If you want to launch two Baichuan
 - Make sure you have the latest version of ''Xinference''. Install it by
+  
   ```
   pip install "xinference[all]"
   ```
@@ -69,6 +71,7 @@ git clone https://github.com/RayJi01/AI_Podcast.git
      This will start the service at default `http://localhost:9997`.
      
    * Start a `Cluster` locally, you need to start a Xinference supervisor on one server and Xinference workers on the other servers. Follow the steps below:
+     
      **For Supervisor**:
      ```
      xinference-supervisor -H "${supervisor_host}"

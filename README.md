@@ -1,10 +1,8 @@
-<img width="1042" alt="a4e0e04c889658eacc1d8ead0dd554c" src="https://github.com/RayJi01/AI_Podcast/assets/89424938/4066a069-eb7f-4070-a4f4-bda56c3db3e7">
-
 # 🕹AI_Podcast🤖
 
-Welcome to the AI Podcast Demo! This repository showcases the capabilities of our AI-powered podcast recommendation system. With this system, you can discover personalized podcast recommendations based on your preferences.
+Welcome to the AI Podcast Demo! This repository showcases the capabilities of our AI-powered podcast recommendation system. Here, you will not only see the AI chat and respond to the human's problems, but also see how a **real-chat** (speaking and listening) can happened between the user and clients. You will also see a chat-room with more than 1 agents (two in our podcast but you can add more) and how they interact with not only your prompts, but also each others' responses. At the AI_Podcast, You can have the feelings of the what is **AI future** feels like. 
 
-![Demo Screenshot](https://github.com/RayJi01/AI_Podcast/assets/89424938/4066a069-eb7f-4070-a4f4-bda56c3db3e7.png) <!-- Replace with an actual screenshot if available -->
+<img width="1042" alt="a4e0e04c889658eacc1d8ead0dd554c" src="https://github.com/RayJi01/AI_Podcast/assets/89424938/4066a069-eb7f-4070-a4f4-bda56c3db3e7">
 
 ## Table of Contents
 
@@ -13,6 +11,7 @@ Welcome to the AI Podcast Demo! This repository showcases the capabilities of ou
   - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
+- [Demo-Videos](#Demo-Videos)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -46,10 +45,10 @@ Clone this repository: `git clone https://github.com/RayJi01/AI_Podcast.git`
 1. Navigate to the project directory: `cd AI_Podcast`
 2. Install the required dependencies: `pip install -r requirements.txt` or follow the step to install required packages when launching.
 3. To start the Xinference Service：
-   * Start an Instance locally: `xinference`.
+   * Start an <mark>Instance<mark> locally: `xinference`.
      This will start the service at default <mark>http://localhost:9997</mark>.
      
-   * Start a cluster locally, you need to start a Xinference supervisor on one server and Xinference workers on the other servers. Follow the steps below:
+   * Start a <mark>Cluster<mark> locally, you need to start a Xinference supervisor on one server and Xinference workers on the other servers. Follow the steps below:
      **For Supervisor**: `xinference-supervisor -H "${supervisor_host}"`
      Replace ${supervisor_host} with the actual host of your supervisor server.
      **For Worker**: `xinference-worker -e "http://${supervisor_host}:9997"`
@@ -70,7 +69,7 @@ Clone this repository: `git clone https://github.com/RayJi01/AI_Podcast.git`
 - 🔌 Model Versatility: You can quickly shift to other models you want with Xinference, either by editing the source code of launching models in AI_Podcast.py or launching different models for AI_Podcast_ZH.py. Both English model or Chinese model are available.
 - 🎧 Audio to Audio Service: With **Whisper** and MacOS's **say**, the Podcast makes the users feel like they are **chatting** through **speaking** and **listening**, not "pseudo-chatting through key-board," with AI agents. You can even change each AI is voice to best-fit your environment.
 
-## Demo Video:
+## Demo-Videos:
 
 - AI_Podcast(English Version): Please Checkout the Tweet of the Demo to see the video!
 - [Twitter Video Demo](https://twitter.com/yichaocheng/status/1679129417778442240)

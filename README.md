@@ -1,4 +1,6 @@
-# AI_Podcast
+<img width="1042" alt="a4e0e04c889658eacc1d8ead0dd554c" src="https://github.com/RayJi01/AI_Podcast/assets/89424938/4066a069-eb7f-4070-a4f4-bda56c3db3e7">
+
+# 🕹AI_Podcast🤖
 
 Welcome to the AI Podcast Demo! This repository showcases the capabilities of our AI-powered podcast recommendation system. With this system, you can discover personalized podcast recommendations based on your preferences.
 
@@ -70,8 +72,9 @@ Clone this repository: `git clone https://github.com/RayJi01/AI_Podcast.git`
 
 ## Demo Video:
 
-- AI_Podcast(English Version):
-<iframe width="560" height="315" src="https://twitter.com/i/status/1679129417778442240" frameborder="0" allowfullscreen></iframe>
+- AI_Podcast(English Version): Please Checkout the Tweet of the Demo to see the video!
+- [Twitter Video Demo](https://twitter.com/yichaocheng/status/1679129417778442240)
+
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to AI_Podcast, follow these steps:
@@ -82,4 +85,4 @@ Contributions are welcome! If you'd like to contribute to AI_Podcast, follow the
 5. Create a pull request detailing your changes
 
 ## License
-This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0)https://www.apache.org/licenses/LICENSE-2.0) file for details.
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) file for details.

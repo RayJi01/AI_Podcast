@@ -41,7 +41,7 @@ The **AI_Podcast_ZH** is built by:
   ```
 - For the AI_Podcast version, ensure you have at least 16G memory storage for computing.
 - For the AI_Podcast_ZH version, ensure you have at least 24G memory storage for launching one model. If you want to launch two Baichuan
-- Make sure you have the latest version of ''Xinference''. Install it by
+- Make sure you have the latest version of `Xinference` . Install it by
   
   ```
   pip install "xinference[all]"

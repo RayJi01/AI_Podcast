@@ -4,3 +4,4 @@ soundfile
 emoji
 numpy
 opencc
+openai-whisper

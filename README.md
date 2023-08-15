@@ -17,6 +17,7 @@ Welcome to the AI Podcast Demo! This repository showcases the capabilities of ou
 
 ## Getting Started
 To try out AI_Podcast on your computer, you should only need a computer with a GPU environment(either CUDA or Metal for MacOS) or a strong CPU for computation and inference. 
+
 The AI_Pocast is built by:
 - @OpenAI's whisper
 - @ggerganov's ggml
